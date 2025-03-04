@@ -15,9 +15,7 @@ const job = new CronJob(
 getAppointment()
 
 async function getAppointment() {
-  const browser = await chromium.launch({
-    headless: false
-  })
+  const browser = await chromium.launch()
 
   const page = await browser.newPage()
 
